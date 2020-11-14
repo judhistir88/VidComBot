@@ -18,7 +18,7 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "Hello, \n\nThis is a Telegram 🎦 Video 🗜️ Compressor 🤖 Bot \n\n<b>Please sent me any Telegram 🎦 📁 I Will 🗜️ into a small 📁</b> \n\n/help for more details... \n\n @publicleech1"
+    START_TEXT = "Hello, \n\nThis is a Telegram 🎦 Video 🗜️ Compressor 🤖 Bot \n\n<b>Please sent me any Telegram 🎦/📁, I Will 🗜️ into a small 📁</b> \n\n/help for more details... \n\n@publicleech1"
    
     ABS_TEXT = " Please don't be selfish."
     
