@@ -18,9 +18,9 @@ class Config(object):
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/DOWNLOADS")
     # Telegram maximum file upload size
-    MAX_FILE_SIZE = 1572864000
-    TG_MAX_FILE_SIZE = 1572864000
-    FREE_USER_MAX_FILE_SIZE = 1572864000
+    MAX_FILE_SIZE = 1900000000
+    TG_MAX_FILE_SIZE = 1900000000
+    FREE_USER_MAX_FILE_SIZE = 1900000000
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = get_config("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
     # proxy for accessing youtube-dl in GeoRestricted Areas
@@ -33,4 +33,4 @@ class Config(object):
     UN_FINISHED_PROGRESS_STR = get_config("UN_FINISHED_PROGRESS_STR", "⬛")
     LOG_FILE_ZZGEVC = get_config("LOG_FILE_ZZGEVC", "Log.txt")
       # because, https://t.me/c/1494623325/5603
-    SHOULD_USE_BUTTONS = get_config("SHOULD_USE_BUTTONS", False)
+    SHOULD_USE_BUTTONS = get_config("SHOULD_USE_BUTTONS", True)
