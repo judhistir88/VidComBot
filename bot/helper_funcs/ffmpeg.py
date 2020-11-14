@@ -126,6 +126,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
             round(percentage, 2),
             ''.join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 5))]),
             ''.join([UN_FINISHED_PROGRESS_STR for i in range(20 - math.floor(percentage / 5))]
+            )
         stats = f'🗜 <b>Compressing</b> {target_percentage}%\n' \
                 f'⏳ <b>ETA:</b> {ETA}\n' \
                 f'{progress_str}\n'
