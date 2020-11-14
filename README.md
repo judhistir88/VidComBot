@@ -39,9 +39,9 @@ class Development(Config):
 ### [@BotFather](https://telegram.dog/BotFather) Commands
 
 ```
-start - Checking bot live.
-compress - To compress the video.
-cancel - Stop the process.
+start - Checking if bot is alive
+compress - To compress the video
+cancel - Stop the process
 log - Get log
 help - To know about bot
 ```
