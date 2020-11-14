@@ -126,12 +126,12 @@ async def incoming_compress_message_f(bot, update):
       if( video is None ):
         try:
           await sent_message.edit_text(
-            text="Download stopped"
+            text="Download stopped 😔" 
           )
         except:
           pass
         delete_downloads()
-        LOGGER.info("Download stopped")
+        LOGGER.info("Download stopped 😔")
         return
     except (ValueError) as e:
       try:
@@ -164,7 +164,7 @@ async def incoming_compress_message_f(bot, update):
     if duration is None or bitrate is None:
       try:
         await sent_message.edit_text(                
-          text="⚠️ Unable to get video meta data ⚠️"                
+          text="⚠️ Unable to get  meta data ⚠️"                
         )
       except:
           pass          
