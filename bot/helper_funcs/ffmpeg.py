@@ -124,11 +124,11 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
         percentage = math.floor(elapsed_time * 100 / total_time)
         progress_str = "📊 <b>Progress:</b> {0}%\n[{1}{2}]".format(
             round(percentage, 2),
-            ''.join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 5))]),
-            ''.join([UN_FINISHED_PROGRESS_STR for i in range(20 - math.floor(percentage / 5))]
+            ''.join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 10))]),
+            ''.join([UN_FINISHED_PROGRESS_STR for i in range(10 - math.floor(percentage / 10))])
             )
-        stats = f'🗜 <b>Compressing</b> {target_percentage}%\n\n' \
-                f'⏳ <b>ETA:</b> {ETA}\n\n' \
+        stats = f'📦️ <b>Compressing</b> {target_percentage}%\n\n' \
+                f'⏰️ <b>ETA:</b> {ETA}\n\n' \
                 f'{progress_str}\n'
         try:
           await message.edit_text(
@@ -185,7 +185,7 @@ async def take_screen_shot(video_file, output_directory, ttl):
         output_directory,
         str(time.time()) + ".jpg"
     )
-    if video_file.upper().endswith(("MKV", "MP4", "WEBM", "AVI" )):
+    if video_file.upper().endswith(("MKV", "MP4", "WEBM")):
         file_genertor_command = [
             "ffmpeg",
             "-ss",
@@ -212,5 +212,3 @@ async def take_screen_shot(video_file, output_directory, ttl):
         return out_put_file_name
     else:
         return None
-
-    
