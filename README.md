@@ -2,6 +2,8 @@
 
 ## Video Compressor Bot
 
+# Can used by owners of the bot only. Not yet able to use for public use.
+
 ## HOW TO DEPLOY YOUTUBE TUTORIAL
 
 <a href="https://youtu.be/YEwAN3iTGyE"><img src="https://img.shields.io/badge/How%20To-Deploy-red.svg?logo=Youtube"></a>
